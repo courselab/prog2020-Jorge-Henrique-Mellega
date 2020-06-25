@@ -23,7 +23,12 @@
 
 int is_prime (int a)
 {
-  return 0;
+  int i = 2;
+  while(i<(a^(1/2))){
+    if(a%i==0) return 0; 
+    i++;  
+  }
+  return 1;
 }
 
 #define USAGE "m003 <num>\n"
