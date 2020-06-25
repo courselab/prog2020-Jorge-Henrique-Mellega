@@ -25,10 +25,10 @@ int is_prime (int a)
 {
   int i = 2;
   while(i<(a/2)){
-    if(a%i==0) return 0; 
+    if(a%i==0) return 1; 
     i++;  
   }
-  return 1;
+  return 0;
 }
 
 #define USAGE "m003 <num>\n"
