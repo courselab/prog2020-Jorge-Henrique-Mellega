@@ -32,7 +32,7 @@ int decimal (char *b)
   int dec = 0;
   for(int i = 0;i<strlen(b);i++){
     if(b[i]=='1'){
-      dec = dec = 2^i;
+      dec = dec + 2^i;
     }
   } 
   return dec;

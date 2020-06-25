@@ -24,7 +24,7 @@
 int is_prime (int a)
 {
   int i = 2;
-  while(i<(a^(1/2))){
+  while(i<(a/2)){
     if(a%i==0) return 0; 
     i++;  
   }
