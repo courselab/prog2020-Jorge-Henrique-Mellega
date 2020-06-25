@@ -30,10 +30,12 @@
 int decimal (char *b)
 {
   int dec = 0;
-  for(int i = 0;i<strlen(b);i++){
+  int val = 1;
+  for(int i = strlen(b)-1; i>0 ;i--){
     if(b[i]=='1'){
-      dec = dec + (2)^(i);
+      dec = dec + val;
     }
+    val = 2*val;
   } 
   return dec;
 }
