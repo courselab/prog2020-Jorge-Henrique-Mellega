@@ -24,11 +24,11 @@
 int is_prime (int a)
 {
   int i = 2;
-  while(i<(a/2)){
-    if(a%i==0) return 1; 
+  while(i<a){
+    if(a%i==0) return 0; 
     i++;  
   }
-  return 0;
+  return 1;
 }
 
 #define USAGE "m003 <num>\n"
