@@ -41,8 +41,6 @@ int lettercount(char* s){
 }
 
 
-/* Do not edit this function. */
-
 int main (int argc, char **argv)
 {
   int n;
