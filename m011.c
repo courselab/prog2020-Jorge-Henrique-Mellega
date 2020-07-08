@@ -26,9 +26,26 @@
 
 /* Return the number of words in ascii text file 'filename'.*/
 
-int wordcount (char *filename)
-{
-  return 0;
+int wordcount(char *filename){
+    FILE *fp;
+    char str[1000];
+    fp =  fopen(filename, "r");
+    if (fp == NULL){
+        printf("Não foi possível abrir o arquivo%s",filename);
+        return 1;
+    }
+    int c = 0, val = 0, valF = 0;
+    while(fgets(str, 1000, fp)!=NULL){
+        while(str[c] != '\0'){
+            if(str[c] == ' ')val++;
+            c ++;
+        }
+        if(val > 0) valF = valF + val + 1;
+        val = 0;
+        c= 0;
+    }
+    fclose(fp);
+    return valF;
 }
 
 /* Do not edit function main. */
