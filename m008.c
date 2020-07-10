@@ -66,7 +66,6 @@ void lastname(char* s){
 }
 
 
-
 /* Do not edit this function. */
 
 int main (int argc, char **argv)

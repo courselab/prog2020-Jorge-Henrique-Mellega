@@ -47,7 +47,6 @@ int wordcount(char *filename){
     fclose(fp);
     return valF;
 }
-
 /* Do not edit function main. */
 
 int main (int argc, char **argv)
