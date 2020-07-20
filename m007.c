@@ -26,18 +26,21 @@
 
 /* Count the number of letters in string s.*/
 
-int lettercount(char* s){
+int lettercount(char* s) 
+{
     int c=0, nC=0, i;
     while(s[c]!='\0'){
         i = (int)s[c];
         if(i > 64 && i < 91){
             nC++;
-        }else if ( i >  96 && i < 123){
+        } 
+        else 
+           if ( i >  96 && i < 123){
             nC++;
         }
         c++;
     }
-    return nC;
+    return nC; 
 }
 
 

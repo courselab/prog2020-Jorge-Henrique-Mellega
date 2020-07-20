@@ -26,7 +26,8 @@
 
 /* Return the number of words in ascii text file 'filename'.*/
 
-int wordcount(char *filename){
+int wordcount(char *filename)
+{
     FILE *fp;
     char str[1000];
     fp =  fopen(filename, "r");
