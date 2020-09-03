@@ -29,8 +29,15 @@
 
 int decimal (char *b)
 {
-  
-  return 0;
+  int dec = 0;
+  int val = 1;
+  for(int i = strlen(b)-1; i>=0 ;i--){
+    if(b[i]=='1'){
+      dec = dec + val;
+    }
+    val = 2*val;
+  } 
+  return dec;
 }
 
 #define USAGE "m004 <string>\n"
